@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: theme-font-b;
+}
+
+@font-face {
+    font-family: theme-font-a;
+    src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: theme-font-b;
+    src: url('../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf');
+}
+
+:root {
+    --theme-color-a: rgb(255, 56, 43);
+    --theme-color-btn: rgb(3, 158, 38);
+    --theme-color-font: rgb(0, 119, 204);
+    --theme-color-black: rgb(51, 51, 51);
+    --theme-color-hr: rgb(0, 53, 128);
+    --theme-color-bg: rgb(241, 245, 253);
+    --theme-color-transparent: rgba(0, 0, 0, 0.2);
+    --theme-color-dark: rgb(0, 32, 77);
+}
+
+a {
+    text-decoration: none;
+    color: var(--theme-color-hr);
+}
+
+ul {
+    list-style: none;
+}
+
+.border {
+    border: 1px solid var(--theme-color-transparent);
+    border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -ms-border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    /* opacity: 0.8; */
+}
+
+button:hover {
+    box-shadow: 0em 0.3em 0.4em 0em var(--theme-color-transparent);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex-row {
+    flex-direction: row !important;
+}
+
+.btn-hover {
+    background: rgba(0, 0, 0, 0.01);
+}
